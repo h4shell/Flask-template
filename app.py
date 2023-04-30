@@ -4,7 +4,8 @@ app = Flask(__name__, static_url_path='/static')
 
 @app.route("/")
 def homepage():
-  return render_template('www/index.html')
+  username = "h4shell"
+  return render_template('www/index.html', user=username)
 
 
 
