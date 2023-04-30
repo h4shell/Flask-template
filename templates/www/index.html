@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <style></style>
+  <head>
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA/4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERAAAAEAAAEAAQAAEBAAEAABAAEAAQAQAAAAEAAAEBAAAAAQAAAQEAABABAAABABAAEAEAAAEAAREAAQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD//wAAx+8AALvXAAB7uwAAf30AAH99AAB7fQAAu30AAMd9AAD//wAA//8AAP//AAD//wAA"
+      rel="icon"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Portfolio</title>
+    <link href="static/style.css" rel="stylesheet" type="text/css" />
+    <script src="static/js/particles.js" defer></script>
+    <script src="static/js/app.js" defer></script>
+    <script src="static/js/script.js" defer></script>
+  </head>
+
+  <body>
+    <script src="jquery-1.12.4.min.js"></script>
+    <div id="particles-js">
+      <canvas
+        class="particles-js-canvas-el"
+        width="375"
+        height="667"
+        style="width: 100%; height: 100%"
+      ></canvas>
+    </div>
+
+    <nav>
+      <div class="logo">H4SHELL</div>
+      <div class="menu">
+        <a href="#about"> About me </a>
+        <a href="#ido"> Services </a>
+      </div>
+    </nav>
+
+    <section class="header">
+      <div class="container">
+        <h2>
+          Hi, I am <br />
+          Lorenzo Fornara
+        </h2>
+
+        <h5>Frontend Developer</h5>
+        <div class="contBtn">
+          <a href="static/files/CV Fornara eng.pdf" class="btn green"
+            >Download CV</a
+          >
+          <a class="btn" href="https://github.com/h4shell">Github Project</a>
+        </div>
+      </div>
+      <div class="img">
+        <img src="static/public/img/pngegg.png" />
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>
+        Computer science plays a fundamental role both for the present and we
+        live today, which to improve the future of tomorrow's society, where the
+        People will be increasingly connected and technology will always allow
+        us more than to achieve things that we do not even consider possible
+        today. The world of work related to this profession is very vast and
+        depends from everyone's preferences. In recent years this type of sector
+        has immediately a strong growth of new figures very different from each
+        other, for This I made the decision to study and specialize in frontend
+        Dev.
+      </p>
+      <div class="container">
+        <div class="card">
+          <h2>Full Name</h2>
+          <h3>Lorenzo Fornara</h3>
+        </div>
+        <div class="card">
+          <h2>Email Address</h2>
+          <h3><a href="mailto:fw1987@gmail.com">fw1987@gmail.com</a></h3>
+        </div>
+        <div class="card">
+          <h2>Telegram</h2>
+          <h3><a href="https://t.me/h4shell">@h4shell</a></h3>
+        </div>
+        <div class="card">
+          <h2>Phone</h2>
+          <h3><a href="tel:+393481206604">+39 348 12 06 604</a></h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="ido" id="ido">
+      <h2>What I do</h2>
+      <div class="container">
+        <div class="card">
+          <div class="icon">
+            <img src="static/public/img/Vector1.png" alt="" />
+          </div>
+          <h3>
+            Software <br />
+            Development
+          </h3>
+        </div>
+        <div class="card select">
+          <div class="icon">
+            <img src="static/public/img/Vector2.png" alt="" />
+          </div>
+          <h3>
+            Web <br />
+            Development
+          </h3>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="static/public/img/Vector3.png" alt="" />
+          </div>
+          <h3>
+            Software <br />
+            Design
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>My Skills</h2>
+      <div class="container">
+        <div class="card">
+          <h3>80%</h3>
+          <h6>HTML</h6>
+        </div>
+        <div class="card">
+          <h3>80%</h3>
+          <h6>CSS</h6>
+        </div>
+        <div class="card">
+          <h3>70%</h3>
+          <h6>JAVASCRIPT</h6>
+        </div>
+        <div class="card">
+          <h3>50%</h3>
+          <h6>PHP</h6>
+        </div>
+      </div>
+    </section>
+
+    <!-- Messenger Plug-in per la chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plug-in per la chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "111175751609924");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v15.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/it_IT/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <!--
+      
+      <section class="contact" id="contact">
+      <h2>Get in touch</h2>
+      <div class="container">
+        <form
+          action="https://h4sh.it/mail.php"
+          method="post"
+          novalidate="novalidate"
+        >
+          <div class="continput">
+            <input
+              type="text"
+              name="name"
+              for="name"
+              placeholder="Name"
+              disabled
+            />
+            <input
+              type="text"
+              name="email"
+              for="email"
+              placeholder="email"
+              disabled
+            />
+          </div>
+          <div class="continput">
+            <input
+              type="text"
+              name="lastname"
+              for="lastname"
+              placeholder="Last name"
+            />
+            <input type="text" name="phone" for="phone" placeholder="phone" />
+          </div>
+          <div class="continput">
+            <textarea name="message" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn green" disabled>SEND</button>
+        </form>
+      </div>
+    </section>
+     
+  -->
+    <footer>
+      <h6>© h4shell 2022</h6>
+    </footer>
+  </body>
+</html>
